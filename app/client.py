@@ -21,7 +21,7 @@ class Client:
             self.button_A = button_A
         """
         for bID in self.boardID :
-            setattr(self, "button_" + bID, DigitalInOut("board" + self.boardID[ bID ]) )
+            setattr(self, "button_" + bID, DigitalInOut( getattr(board, bID) ))
             newButton = getattr(self, "button_" + bID)
             newButton.direction = Direction.INPUT
             newButton.pull = Pull.UP
