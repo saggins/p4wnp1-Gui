@@ -8,6 +8,7 @@ authors = ["saggins <win32prog@gmail.com>"]
 python = "^3.8"
 adafruit-circuitpython-ssd1306 = "^2.11.2"
 pydantic = "^1.8.1"
+Pillow = "^8.2.0"
 
 [tool.poetry.dev-dependencies]
 
